@@ -1,0 +1,28 @@
+@layer components {
+    .notification-content {
+        position: absolute!important;
+        width: 350px;
+        transition:350ms;
+        display:none;
+        @include media-breakpoint-down(sm) {
+            width: 250px;
+        }
+        .notification-content__title {
+            @apply font-medium mb-5;
+        }
+        .notification-content__box {
+            @apply p-5;
+        }
+
+        &.show{
+            display:flex;
+            top: 30px;
+            left: -330px;
+            z-index: 9999;
+            @include media-breakpoint-down(sm) {
+                left: -200px;
+            }
+        }
+
+    }
+}

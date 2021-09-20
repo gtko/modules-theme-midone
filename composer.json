@@ -1,0 +1,23 @@
+{
+    "name": "pandasweet/testassets",
+    "description": "",
+    "authors": [
+        {
+            "name": "Pandasweet",
+            "email": "pandasweet14@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\TestAssets\\": ""
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "ThemeMidone",
+    "alias": "thememidone",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
