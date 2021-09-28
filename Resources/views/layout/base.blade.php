@@ -36,8 +36,5 @@
 
 </head>
 <!-- END: Head -->
-
 @yield('body')
-
-
 </html>
