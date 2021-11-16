@@ -1,8 +1,10 @@
 import Alpine from "alpinejs";
 import cash from "cash-dom";
+import TomSelect from "tom-select";
 
 window.cash = cash;
 window.Alpine = Alpine;
+window.TomSelect = TomSelect;
 Alpine.start();
 
 // function refreshApp(){
