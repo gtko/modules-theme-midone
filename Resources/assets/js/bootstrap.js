@@ -1,6 +1,7 @@
 import Alpine from "alpinejs";
 import cash from "cash-dom";
 import TomSelect from "tom-select";
+import 'livewire-sortable'
 
 window.cash = cash;
 window.Alpine = Alpine;
