@@ -33,7 +33,6 @@
     @livewireStyles
     @stack('styles')
     @stack('script-head')
-
     <style>
         [x-cloak] {
             display: none;
