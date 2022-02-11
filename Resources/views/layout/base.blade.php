@@ -34,6 +34,12 @@
     @stack('styles')
     @stack('script-head')
 
+    <style>
+        [x-cloak] {
+            display: none;
+        }
+    </style>
+
 </head>
 <!-- END: Head -->
 @yield('body')
