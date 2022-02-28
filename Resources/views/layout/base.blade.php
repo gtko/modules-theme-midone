@@ -11,8 +11,7 @@
     @yield('head')
 
     <!-- BEGIN: CSS Assets-->
-    <link rel="stylesheet" href="{{ mix('dist/css/theme.css') }}" />
-    <link rel="stylesheet" href="{{ mix('dist/css/app.css') }}" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.25.1/ui/trumbowyg.min.css" integrity="sha512-nwpMzLYxfwDnu68Rt9PqLqgVtHkIJxEPrlu3PfTfLQKVgBAlTKDmim1JvCGNyNRtyvCx1nNIVBfYm8UZotWd4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.ckeditor.com/4.17.2/standard-all/ckeditor.js"></script>
     <!-- END: CSS Assets-->
@@ -31,12 +30,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js"></script>
 
+    <link rel="stylesheet" href="{{ mix('dist/css/theme.css') }}" />
+    <link rel="stylesheet" href="{{ mix('dist/css/app.css') }}" />
+
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            document.querySelectorAll("[link]").forEach(function (element) {
+                element.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    window.location.href = element.getAttribute("link");
+                });
+            });
+
+            document.querySelectorAll("[link-blank]").forEach(function (element) {
+                element.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    window.open(element.getAttribute("link-blank"), '_blank');
+                });
+            });
+        });
+    </script>
+
     @livewireStyles
     @stack('styles')
     @stack('script-head')
     <style>
         [x-cloak] {
             display: none;
+        }
+
+        [link]{
+            cursor: pointer;
+        }
+
+        [link-blank]{
+            cursor: pointer;
         }
     </style>
 

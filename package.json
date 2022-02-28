@@ -13,7 +13,7 @@
         "@left4code/tw-starter": "^1.0.28",
         "cash-dom": "^8.1.0",
         "feather-icons": "^4.28.0",
-        "tom-select": "^2.0.0-rc.5"
+        "tom-select": "2.0.0"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.3.1",
