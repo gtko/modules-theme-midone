@@ -11,8 +11,7 @@
     @yield('head')
 
     <!-- BEGIN: CSS Assets-->
-    <link rel="stylesheet" href="{{ mix('dist/css/theme.css') }}" />
-    <link rel="stylesheet" href="{{ mix('dist/css/app.css') }}" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.25.1/ui/trumbowyg.min.css" integrity="sha512-nwpMzLYxfwDnu68Rt9PqLqgVtHkIJxEPrlu3PfTfLQKVgBAlTKDmim1JvCGNyNRtyvCx1nNIVBfYm8UZotWd4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.ckeditor.com/4.17.2/standard-all/ckeditor.js"></script>
     <!-- END: CSS Assets-->
@@ -30,6 +29,9 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js"></script>
+ 
+    <link rel="stylesheet" href="{{ mix('dist/css/theme.css') }}" />
+    <link rel="stylesheet" href="{{ mix('dist/css/app.css') }}" />
 
     @livewireStyles
     @stack('styles')
