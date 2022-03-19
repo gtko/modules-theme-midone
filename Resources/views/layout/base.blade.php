@@ -29,6 +29,9 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js"></script>
+ 
+    <link rel="stylesheet" href="{{ mix('dist/css/theme.css') }}" />
+    <link rel="stylesheet" href="{{ mix('dist/css/app.css') }}" />
 
     <link rel="stylesheet" href="{{ mix('dist/css/theme.css') }}" />
     <link rel="stylesheet" href="{{ mix('dist/css/app.css') }}" />
