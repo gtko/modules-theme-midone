@@ -51,6 +51,15 @@
                     window.open(element.getAttribute("link-blank"), '_blank');
                 });
             });
+
+
+            document.querySelectorAll("[ignore-link]").forEach(function (element) {
+                element.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Ignore link');
+                });
+            });
         });
     </script>
 
