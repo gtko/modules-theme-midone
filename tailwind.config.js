@@ -1,8 +1,9 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const primaryColors = require("@left4code/tw-starter/dist/js/colors");
+const colors = require('tailwindcss/colors')
 
 module.exports = {
-    purge: [
+    content: [
         '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         '../../vendor/laravel/jetstream/**/*.blade.php',
         '../../storage/framework/views/*.php',
@@ -14,6 +15,7 @@ module.exports = {
         "../../Modules/**/*.{php,html,js,jsx,ts,tsx,vue}",
         "./node_modules/@left4code/tw-starter/**/*.js",
         "./node_modules/@left4code/tw-starter/**/*.js",
+        '../../vendor/filament/**/*.blade.php',
     ],
 
     darkMode: "class",
@@ -25,10 +27,17 @@ module.exports = {
         extend: {
             colors: {
                 ...primaryColors,
+                danger: colors.rose,
                 primary: {
                     ...primaryColors.primary,
-                    1: "#2F5AD8",
+                    ...colors.blue
                 },
+                success: colors.green,
+                warning: colors.yellow,
+                // primary: {
+                //     ...primaryColors.primary,
+                //     1: "#2F5AD8",
+                // },
                 bleu: {
                     light: '#dbf3ff',
                     DEFAULT: '#00a8ff',
