@@ -64,6 +64,7 @@
     </script>
 
     @livewireStyles
+    @bukStyles
     @stack('styles')
     @stack('script-head')
     <style>
