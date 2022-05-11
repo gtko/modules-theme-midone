@@ -14,7 +14,8 @@ mix.js(__dirname + '/Resources/assets/js/app.js', "/dist/js/theme.js")
         postCss: [tailwindcss(__dirname + "/tailwind.config.js")],
     })
     .copyDirectory(__dirname + "/Resources/assets/fonts", "../../public/dist/fonts")
-    .copyDirectory(__dirname + "/Resources/assets/images", "../../public/dist/images");
+    .copyDirectory(__dirname + "/Resources/assets/images", "../../public/dist/images")
+    .copy(__dirname + "/../../vendor/filament/forms/dist/module.esm.css", "../../public/dist/css/form.css");
 // .sourceMaps();
 
 
