@@ -32,7 +32,6 @@
 
     <link rel="stylesheet" href="{{ mix('dist/css/theme.css') }}" />
     <link rel="stylesheet" href="{{ mix('dist/css/app.css') }}" />
-    <link rel="stylesheet" href="{{ mix('dist/css/form.css') }}" />
 
 
     <script>
