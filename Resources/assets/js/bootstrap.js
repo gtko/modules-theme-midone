@@ -4,9 +4,10 @@ import FormsAlpinePlugin from '../../../../../vendor/filament/forms/dist/module.
 import Focus from '@alpinejs/focus'
 import Tooltip from "@ryangjchandler/alpine-tooltip";
 
+// import {FormsAlpinePlugin} from '../../../../../vendor/filament/forms/resources/index.js'
+
 import cash from "cash-dom";
 import TomSelect from "tom-select";
-// import 'livewire-sortable'
 
 
 Alpine.plugin(FormsAlpinePlugin)
