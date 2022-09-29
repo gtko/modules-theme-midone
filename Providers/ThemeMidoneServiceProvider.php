@@ -13,7 +13,7 @@ class ThemeMidoneServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->scoped(ThemeContract::class, Theme::class);
+        $this->app->singleton(ThemeContract::class, Theme::class);
     }
 
     /**

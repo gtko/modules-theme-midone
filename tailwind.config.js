@@ -106,11 +106,6 @@ module.exports = {
                 1.5: 1.5,
                 2.5: 2.5,
             },
-            spacing: {
-                'some key': {
-                    1.5: 1.5, // not sure about the correct value
-                },
-            },
         },
     },
 
