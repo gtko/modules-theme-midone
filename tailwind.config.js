@@ -25,6 +25,12 @@ module.exports = {
             DEFAULT: primaryColors.gray["300"],
         }),
         extend: {
+            spacing: {
+                'some key': {
+                    '1.5': '0.375rem',
+                },
+                '1.5': '0.375rem'
+            },
             colors: {
                 ...primaryColors,
                 danger: colors.rose,
@@ -105,7 +111,7 @@ module.exports = {
                 0.5: 0.5,
                 1.5: 1.5,
                 2.5: 2.5,
-            },
+            }
         },
     },
 
